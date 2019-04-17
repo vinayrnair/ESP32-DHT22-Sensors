@@ -1,0 +1,8 @@
+This Repo is for my project to learn about MQTT protocol, use Raspberry Pi and ESP32 chip 
+to transmit, wirelessly, humidity and temp sensor from DHT22.
+
+The end game is to control my humidifier based on humidity values, for which I am currently thinking of 
+using IFTT and a smart electric plug to which the humidifier will be connected.
+
+The project is heavily influenced by the steps shared by rotoron in his website: 
+https://www.rototron.info/raspberry-pi-esp32-micropython-tutorial/ 
