@@ -16,7 +16,7 @@ For this I decided to build this very simple project.
 I took 99% of things from the orignal code from Dave. However, I tweaked it a bit to be used for ESP32 instead of ESP8266 and DHT22 instead of DHT11. I also changed the pin to the pin I am using on the ESP32. Also, I didnt want to exhaust the free usage from Adafruit IO. To do that, I reduced the data collection from 5 second to every 10minutes. You may want to change it based on your individual use case.
 
 ## Disclaimer
-The code is taken directly from @DaveSprague with very few modification. So a special thanks for Dave for providingn the code and explanation on his Github page: 
+The code is taken directly from @DaveSprague with very few modification. So a special thanks for Dave for providing the code and explanation on his Github page: 
 https://github.com/openhomeautomation/adafruit-io-esp8266/blob/master/esp8266_sensor_module/esp8266_sensor_module.ino
 
 ## Pictures from the project
