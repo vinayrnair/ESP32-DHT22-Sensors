@@ -20,14 +20,14 @@ The project is heavily influenced by the steps shared by rotoron in his website:
 \---------------------Latest-------------------------------
 
 Introduction
-
+------------
 After learning about how to connect Raspberry Pi and ESP32 via MQTT, I stumbled
 upon another very interesting Github user \@DaveSprague who connected the
 ESP8266 directly to Adafruit IO. This is interesting as it frees my Raspberry Pi
 for other interesting projects. So I decided this is the way to go.
 
 Problem statement
-
+-----------------
 At this point of time it will be worth noting the "real" purpose of this
 project. I live in Germany where the weather is brutally dry for an Indian like
 me. My daughter has dry skin problems which got me thinking to start monitorinng
@@ -42,7 +42,7 @@ or the impact of humidifier after its switched on.
 For this I decided to build this very simple project.
 
 Disclaimer
-
+----------
 The code is taken directly from \@DaveSprague with very few modification. So a
 special thanks for Dave for providingn the code and explanation on his Github
 page:
