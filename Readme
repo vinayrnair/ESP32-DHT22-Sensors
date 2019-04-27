@@ -1,4 +1,5 @@
 -------------------OLD----------------------------------
+--------------------------------------------------------
 This Repo is for my project to learn about MQTT protocol, use Raspberry Pi and ESP32 chip to transmit, wirelessly, humidity and temp sensor from DHT22.
 
 The end game is to control my humidifier based on humidity values, for which I am currently thinking of using IFTT and a smart electric plug to which the humidifier will be connected.
@@ -8,7 +9,9 @@ https://www.rototron.info/raspberry-pi-esp32-micropython-tutorial/
 -------------------------------------------------------
 
 ---------------------Latest-------------------------------
-# Introduction
+--------------------------------------------------------
+Introduction
+------------
 After learning about how to connect Raspberry Pi and ESP32 via MQTT, I stumbled upon another very interesting Github user @DaveSprague who connected the ESP8266 directly to Adafruit IO. This is interesting as it frees my Raspberry Pi for other interesting projects. So I decided this is the way to go. 
 
 # Problem statement
