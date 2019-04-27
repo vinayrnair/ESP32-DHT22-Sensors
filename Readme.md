@@ -9,6 +9,9 @@ At this point of time it will be worth noting the "real" purpose of this project
 The problem with humidifier is that we cant monitor how much is the humidity and or the impact of humidifier after its switched on. 
 For this I decided to build this very simple project. 
 
+## The code
+(ESP32-DHT22-Sensors/ESP32_DHT22_Humidity_Controller_General.ino)
+
 ## Changes to the original code
 I took 99% of things from the orignal code from Dave. However, I tweaked it a bit to be used for ESP32 instead of ESP8266 and DHT22 instead of DHT11. I also changed the pin to the pin I am using on the ESP32. Also, I didnt want to exhaust the free usage from Adafruit IO. To do that, I reduced the data collection from 5 second to every 10minutes. You may want to change it based on your individual use case.
 
@@ -24,13 +27,16 @@ https://github.com/openhomeautomation/adafruit-io-esp8266/blob/master/esp8266_se
 ![](Images/ESP32.jpg)
 
 ### ESP32 Back connections
-![](Images/ESP32 connection.jpg)
+![](Images/ESP32_connection.jpg)
 
-### DHT22 connection
+### DHT22 connection *(Note this is the wrong connection. The Yellow and red wire should be swapped)*
+![](Images/DHT22_sensor.jpg)
 
 ### Snug in a box
+![](Images/In_a_box.jpg)
 
 ### Room setup
+![](Images/Room_setup.jpg)
 
 
 ## Issues faced during the project
