@@ -44,7 +44,7 @@ https://github.com/openhomeautomation/adafruit-io-esp8266/blob/master/esp8266_se
 Getting the ESP32 library installed has been a pain for me with the dreadful "Tool xtensa-esp32-elf-gcc is not available for your operating system". This is now documented as an issue on https://github.com/espressif/arduino-esp32/issues/2651. After some frustration, I just chucked raspberry pi and used a windows machine, installed Arduino IDE there and the code worked as a breeze. 
 
 ### IOT Platform
-I tried my hand on MQTT using Rotoron's code (mentioned below). But I found it difficult to understand how to bring the data to an IOT cloud from where I could create event and further take action based on that. I put the entire blame on myself and my lack of programming skills. :) Dave's github gives a very clear explanation on how to use Adafruit IO which I found very easy to use. 
+I succesfully used MicroPython, MQTT to power the ESP32 and DHT22 and got the data on a webserver using Rotoron's code . I would highly recommend his site as it is really easy to follow and fun. You can find it here: https://www.rototron.info/raspberry-pi-esp32-micropython-tutorial/. But I didnt find a solution on how to bring the data to an IOT cloud from where I could create event and further take action based on that. I put the entire blame on myself and my lack of programming skills. :) Fortunately, Dave's github gives a very clear explanation on how to use Adafruit IO which I found very easy to use. 
 
 ### Erroneous values from DHT22
 This is also a known fact that DHT22 sometimes can give wrong values. I would get 6 figure values for both Temp and Humidity. I can of course put a condition to ignore any value more than 100% (impossible to get rain within the room). I am too lazy to do that and of course with a 10mins data entry, I am ok to get this one time erroneous value which will get corrected in the next 10mins
@@ -53,16 +53,4 @@ This is also a known fact that DHT22 sometimes can give wrong values. I would ge
 With my many re-configurations, the female jumper wire had become loose and this also contributed to erroneous values from the sensor. I researched on how to tighten the female jumper wires and found this youtube video quite useful https://www.youtube.com/watch?v=-InoAbkNVdQ. This sorted the bad connection issue. Also to ensure this does not happen again, I put the whole circuitry securely in a box. 
 
 ### Wrong pin connections
-Fortunately, I didn't burn things down, but plugging the wrong pins ended up with my ESP32 and DHT22 being really really hot!!! Lesson learned, please plug things correctly and check it before leaving it unattended.  
-
-
-
---------------------------------------------------------
--------------------OLD----------------------------------
-This Repo is for my project to learn about MQTT protocol, use Raspberry Pi and ESP32 chip to transmit, wirelessly, humidity and temp sensor from DHT22.
-
-The end game is to control my humidifier based on humidity values, for which I am currently thinking of using IFTT and a smart electric plug to which the humidifier will be connected.
-
-The project is heavily influenced by the steps shared by rotoron in his website: 
-https://www.rototron.info/raspberry-pi-esp32-micropython-tutorial/ 
--------------------------------------------------------
+Fortunately, I didn't burn things down, but plugging the wrong pins ended up with my ESP32 and DHT22 being really really hot!!! Lesson learned, please plug things correctly and check it before leaving it unattended.
